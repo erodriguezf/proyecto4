@@ -90,7 +90,7 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
 
         fun bindItems(ciudad: Ciudad){
             itemView.ciudad.text = ciudad.ciudad
-            itemView.clima.text = ciudad.clima.toString()
+            itemView.clima.text = ciudad.clima.toString()  + "°C"
             itemView.image1.setImageResource(ciudad.imagen)
 
 

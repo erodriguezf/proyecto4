@@ -18,11 +18,24 @@ class Other : AppCompatActivity() {
 
         var intent = intent
         val name = intent.getStringExtra("ciudad")
-        val cli = intent.getStringExtra("clima")
+        val cli = intent.getStringExtra("clima") + "°C"
 
         actionBar.setTitle(name)
-        Dia.text = name
-        clima.text = cli
+        Dia1.text = " lunes "
+        clima1.text = cli
+        Dia2.text = " martes "
+        clima2.text = cli
+        Dia3.text = " miercoles "
+        clima3.text = cli
+        Dia4.text = " jueves "
+        clima4.text = cli
+        Dia5.text = " viernes "
+        clima5.text = cli
+        Dia6.text = " sábado "
+        clima6.text = cli
+        Dia7.text = " domingo "
+        clima7.text = cli
+
 
 
     }

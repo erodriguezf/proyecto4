@@ -7,7 +7,7 @@
     tools:context=".Other">
 
     <TextView
-        android:id="@+id/Dia"
+        android:id="@+id/Dia1"
         android:text="dia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,13 +17,134 @@
         />
 
     <TextView
-        android:id="@+id/clima"
+        android:id="@+id/clima1"
         android:text="clima"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="20sp"
-        android:layout_below="@id/Dia"
+        android:layout_below="@id/Dia1"
         />
+    <TextView
+        android:id="@+id/Dia2"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima1"
+        />
+
+    <TextView
+        android:id="@+id/clima2"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia2"
+        />
+    <TextView
+        android:id="@+id/Dia3"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima2"
+        />
+
+    <TextView
+        android:id="@+id/clima3"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia3"
+        />
+    <TextView
+        android:id="@+id/Dia4"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima3"
+        />
+
+    <TextView
+        android:id="@+id/clima4"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia4"
+        />
+    <TextView
+        android:id="@+id/Dia5"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima4"
+        />
+
+    <TextView
+        android:id="@+id/clima5"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia5"
+        />
+    <TextView
+        android:id="@+id/Dia6"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima5"
+        />
+
+    <TextView
+        android:id="@+id/clima6"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia6"
+        />
+    <TextView
+        android:id="@+id/Dia7"
+        android:text="dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/clima6"
+        />
+
+    <TextView
+        android:id="@+id/clima7"
+        android:text="clima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/Dia7"
+        />
+
 
 </RelativeLayout>
