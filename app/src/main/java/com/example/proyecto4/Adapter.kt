@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyecto4.model.Main
 import kotlinx.android.synthetic.main.row.view.*
 
 class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
@@ -20,7 +21,10 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         holder.bindItems(arrayList[position])
+
+
 
         holder.itemView.setOnClickListener {
 
@@ -67,7 +71,7 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
             val ciudad = arrayList.get(position)
 
             var city : String = ciudad.ciudad
-            var temperatura : String = ciudad.clima.toString()
+            var temperatura : String = ciudad.clima
             var imag: Int = ciudad.imagen
 
             val intent = Intent(context,Other::class.java)
@@ -90,7 +94,7 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
 
         fun bindItems(ciudad: Ciudad){
             itemView.ciudad.text = ciudad.ciudad
-            itemView.clima.text = ciudad.clima.toString()  + "°C"
+            itemView.clima.text =  ciudad.clima + "°C"
             itemView.image1.setImageResource(ciudad.imagen)
 
 

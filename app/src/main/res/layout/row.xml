@@ -13,12 +13,12 @@
         android:padding="16dp"
         >
 
+
         <ImageView
             android:id="@+id/image1"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:scaleType="fitXY"
-
             />
 
         <TextView
@@ -38,6 +38,15 @@
             android:padding="10dp"
             android:textSize="20sp"
             android:layout_below="@id/ciudad"
+            />
+        <TextView
+            android:id="@+id/error"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/clima"
             />
 
 

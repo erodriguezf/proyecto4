@@ -1,5 +1,6 @@
 package com.example.proyecto4
 
-class Ciudad(var ciudad: String, var clima: Int,var imagen: Int) {
+class Ciudad(var ciudad: String, var clima: String,var imagen: Int) {
+
 
 }
