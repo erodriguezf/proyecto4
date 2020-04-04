@@ -22,14 +22,11 @@ class MainActivity : AppCompatActivity() {
         arrayList.add(Ciudad("Ibagué",23 ,R.drawable.ibague))
         arrayList.add(Ciudad("Medellín",20 ,R.drawable.medellin))
         arrayList.add(Ciudad("Pereira",18 ,R.drawable.pereira))
-        arrayList.add(Ciudad("Soledad",30 ,R.drawable.soledad))
+        arrayList.add(Ciudad("Soledad",80 ,R.drawable.soledad))
 
         val adapter = Adapter(arrayList,this)
 
         recyc.layoutManager = LinearLayoutManager(this)
         recyc.adapter = adapter
-
-
-
     }
 }
