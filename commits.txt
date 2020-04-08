@@ -1,0 +1,8 @@
+Changes:
+  * Mejorada UI, ahora son Cards las ciudades y los dias.
+  * Integrada API.
+Issues:
+  * No se actualizan los datos obtenidos desde la API.
+  * No es syncrono.
+Todos:
+  * Hallar la forma de poder cosumir la API de tal manera que se pueda actualizar la información de las ciudades.
