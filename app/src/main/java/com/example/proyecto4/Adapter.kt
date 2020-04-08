@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyecto4.model.Main
 import kotlinx.android.synthetic.main.row.view.*
 
 class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
@@ -20,54 +21,15 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         holder.bindItems(arrayList[position])
 
         holder.itemView.setOnClickListener {
 
-           /* if(position == 0){
-                Toast.makeText(context,"Bienvenido a Barranquilla",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 1){
-                Toast.makeText(context,"Bienvenido a Bogotá",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 2){
-                Toast.makeText(context,"Bienvenido a Bucaramanga",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 3){
-                Toast.makeText(context,"Bienvenido a Cali",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 4){
-                Toast.makeText(context,"Bienvenido a Cartagena",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 5){
-                Toast.makeText(context,"Bienvenido a Cucuta",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 6){
-                Toast.makeText(context,"Bienvenido a Ibagué",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 7){
-                Toast.makeText(context,"Bienvenido a Medellín",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 8){
-                Toast.makeText(context,"Bienvenido a Pereira",Toast.LENGTH_SHORT).show()
-            }
-
-            if(position == 9){
-                Toast.makeText(context,"Bienvenido a Soledad",Toast.LENGTH_SHORT).show()
-            }*/
-
             val ciudad = arrayList.get(position)
 
             var city : String = ciudad.ciudad
-            var temperatura : String = ciudad.clima.toString()
+            var temperatura : String = ciudad.clima
             var imag: Int = ciudad.imagen
 
             val intent = Intent(context,Other::class.java)
@@ -77,8 +39,6 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
             intent.putExtra("imagen",imag)
 
             context.startActivity(intent)
-
-
         }
     }
 
@@ -90,15 +50,8 @@ class Adapter(val arrayList: ArrayList<Ciudad>, val context: Context):
 
         fun bindItems(ciudad: Ciudad){
             itemView.ciudad.text = ciudad.ciudad
-            itemView.clima.text = ciudad.clima.toString()  + "°C"
-            itemView.image1.setImageResource(ciudad.imagen)
-
-
-
-
+            itemView.clima.text =  ciudad.clima + "°C"
+            itemView.image.setImageResource(ciudad.imagen)
         }
-
     }
-
-
 }

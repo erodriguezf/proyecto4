@@ -18,25 +18,15 @@ class Other : AppCompatActivity() {
 
         var intent = intent
         val name = intent.getStringExtra("ciudad")
-        val cli = intent.getStringExtra("clima") + "°C"
+        val cli = intent.getStringExtra("clima")
+        val cl1 = cli.toInt()
 
         actionBar.setTitle(name)
-        Dia1.text = " lunes "
-        clima1.text = cli
-        Dia2.text = " martes "
-        clima2.text = cli
-        Dia3.text = " miercoles "
-        clima3.text = cli
-        Dia4.text = " jueves "
-        clima4.text = cli
-        Dia5.text = " viernes "
-        clima5.text = cli
-        Dia6.text = " sábado "
-        clima6.text = cli
-        Dia7.text = " domingo "
-        clima7.text = cli
+        fillClimateFields(name)
+    }
 
-
-
+    fun fillClimateFields(city: String) {
+        tuesdayTemperature.text = "26°"
+        mondayTemperature.text = "26°"
     }
 }

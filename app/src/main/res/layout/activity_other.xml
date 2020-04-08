@@ -1,150 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content">
+
+<RelativeLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Other">
 
-    <TextView
-        android:id="@+id/Dia1"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mondayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/clima1"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia1"
-        />
-    <TextView
-        android:id="@+id/Dia2"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima1"
-        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/clima2"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia2"
-        />
-    <TextView
-        android:id="@+id/Dia3"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima2"
-        />
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="monday"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/clima3"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia3"
-        />
-    <TextView
-        android:id="@+id/Dia4"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima3"
-        />
+            <TextView
+                android:id="@+id/mondayTemperature"
+                android:layout_width="315dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:text="temperature"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/monday" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/clima4"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia4"
-        />
-    <TextView
-        android:id="@+id/Dia5"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima4"
-        />
+    </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/clima5"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia5"
-        />
-    <TextView
-        android:id="@+id/Dia6"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima5"
-        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tuesdayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_below="@id/mondayCard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/clima6"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia6"
-        />
-    <TextView
-        android:id="@+id/Dia7"
-        android:text="dia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"
-        android:textSize="25sp"
-        android:layout_below="@id/clima6"
-        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/clima7"
-        android:text="clima"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:layout_below="@id/Dia7"
-        />
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="tuesday"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/tuesdayTemperature"
+                android:layout_width="315dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:text="temperature"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tuesday"
+                app:layout_constraintVertical_bias="0.258" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wednesdayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_below="@id/tuesdayCard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="wednesday"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wednesdayTemperature"
+                android:layout_width="315dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:text="temperature"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wednesday"
+                app:layout_constraintVertical_bias="0.258" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/thirdsdayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_below="@id/wednesdayCard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/thirdsday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="thirdsday"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/thirdsdayTemperature"
+                android:layout_width="315dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:text="temperature"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thirdsday"
+                app:layout_constraintVertical_bias="0.258" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fridayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_below="@id/thirdsdayCard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="friday"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fridayTemperature"
+                android:layout_width="315dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:text="temperature"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/friday"
+                app:layout_constraintVertical_bias="0.258" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>
+</ScrollView>
