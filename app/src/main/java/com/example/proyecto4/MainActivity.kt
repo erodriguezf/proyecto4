@@ -3,6 +3,7 @@ package com.example.proyecto4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.Response
@@ -19,10 +20,12 @@ import kotlin.coroutines.suspendCoroutine
 class MainActivity : AppCompatActivity() {
 
     private var globalVaribleToTest: String = "test before"
+    private lateinit var viewModel: model
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         val arrayList = ArrayList<Ciudad>();
         Log.d("Test before", globalVaribleToTest)
@@ -30,15 +33,15 @@ class MainActivity : AppCompatActivity() {
         Log.d("Test after", globalVaribleToTest)
         Log.d("Response_result", result)
 
-        arrayList.add(Ciudad("Barranquilla", "-20", R.drawable.barranquilla))
-        arrayList.add(Ciudad("Bogotá", "14", R.drawable.bogota))
-        arrayList.add(Ciudad("Bucaramanga", "23", R.drawable.bucaramanga))
-        arrayList.add(Ciudad("Cali", "23", R.drawable.cali))
-        arrayList.add(Ciudad("Cartagena", "26", R.drawable.cartagena))
-        arrayList.add(Ciudad("Cucuta", "26", R.drawable.cucuta))
-        arrayList.add(Ciudad("Ibagué", "22", R.drawable.ibague))
-        arrayList.add(Ciudad("Medellín", "15", R.drawable.medellin))
-        arrayList.add(Ciudad("Pereira", "21", R.drawable.pereira))
+        arrayList.add(Ciudad("Barranquilla", "27", R.drawable.barranquilla))
+        arrayList.add(Ciudad("Bogotá", "12", R.drawable.bogota))
+        arrayList.add(Ciudad("Bucaramanga", "20", R.drawable.bucaramanga))
+        arrayList.add(Ciudad("Cali", "19", R.drawable.cali))
+        arrayList.add(Ciudad("Cartagena", "27", R.drawable.cartagena))
+        arrayList.add(Ciudad("Cucuta", "24", R.drawable.cucuta))
+        arrayList.add(Ciudad("Ibagué", "20", R.drawable.ibague))
+        arrayList.add(Ciudad("Medellín", "16", R.drawable.medellin))
+        arrayList.add(Ciudad("Pereira", "18", R.drawable.pereira))
         arrayList.add(Ciudad("Soledad", "28", R.drawable.soledad))
 
         val adapter = Adapter(arrayList, this)
